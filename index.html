@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>KloudyVD</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="mainPage">
+        <img src="things/kloudy.png" id="bouncingLogo" alt="Bouncing Kloudy Logo">
+        <div id="cornerGlow"></div>
+        <div id="horizontalGlow"></div>
+        <div class="edge-indicator top" id="topIndicator"></div>
+        <div class="edge-indicator bottom" id="bottomIndicator"></div>
+        <div class="edge-indicator left" id="leftIndicator"></div>
+        <div class="edge-indicator right" id="rightIndicator"></div>
+    </div>
+
+    <div id="infoPage">
+        <div id="returnGlow"></div>
+        <div id="returnHorizontalGlow"></div>
+        
+        <div class="info-content">
+            <p>
+                <a href="https://instagram.com/kloudy777" target="_blank" rel="noopener noreferrer" class="instagram-link">
+                    <img src="things/instagram.png" alt="Instagram" class="instagram-icon">
+                    @kloudy777
+                </a>
+            </p>
+            <p>
+                <a href="https://github.com/seonghyun11" target="_blank" rel="noopener noreferrer" class="github-link">
+                    <img src="things/github.png" alt="Github" class="github-icon">
+                    @seonghyun11
+                </a>
+            </p>
+            <p>
+                <a href="https://open.spotify.com/artist/5tP9MksSHHb59vV4N6HMHI?si=k-iOmvvRTK22fYA1KCTAQw" target="_blank" rel="noopener noreferrer" class="spotify-link">
+                    <img src="things/spotify.png" alt="Spotify" class="spotify-icon">
+                    @bliss3three
+                </a>
+            </p>
+        </div>
+        
+        <div class="settings-panel">
+            <div class="setting-item">
+                <span class="setting-label">Hit Indicators</span>
+                <label class="toggle">
+                    <input type="checkbox" id="hitIndicatorsToggle">
+                    <span class="toggle-slider"></span>
+                </label>
+            </div>
+            <div class="setting-item">
+                <span class="setting-label">BGM</span>
+                <label class="toggle">
+                    <input type="checkbox" id="musicToggle">
+                    <span class="toggle-slider"></span>
+                </label>
+            </div>
+        </div>
+        
+        <audio id="song1" preload="auto">
+            <source src="things/song1.mp3" type="audio/mpeg">
+        </audio>
+        <audio id="song2" preload="auto">
+            <source src="things/song2.mp3" type="audio/mpeg">
+        </audio>
+        <audio id="song3" preload="auto">
+            <source src="things/song3.mp3" type="audio/mpeg">
+        </audio>
+        
+        <div id="musicPlayer" class="music-player">
+            <div class="song-title" id="songTitle"></div>
+            <div class="player-controls">
+                <button id="prevButton" class="control-btn">◀</button>
+                <button id="playPauseButton" class="control-btn play-pause">❚❚</button>
+                <button id="nextButton" class="control-btn">▶</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
